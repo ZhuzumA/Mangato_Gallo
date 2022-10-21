@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;700&display=swaprel="stylesheet');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* html,
+* body {
+  height: 100%;
+}
+
+body {
+  transform: scale(1);
+  transform-origin: 0 0;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: rgb(26, 27, 35);
+  padding: 1rem 5%;
+  color: rgb(242, 246, 250);
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+body header > img {
+  width: 10rem;
+  height: auto;
+}
+body nav > ul {
+  margin: 1em 1.5em;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border: rgba(251, 216, 213, 0.803) 0.01em solid;
+  border-radius: 0.3em;
+  width: 50em;
+}
+body nav > ul > li {
+  padding: 0.2em;
+}
+body nav > ul > li a {
+  text-decoration: none;
+  color: rgb(242, 246, 250);
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+body nav > ul > li a:hover {
+  color: rgba(249, 203, 201, 0.817);
+  font-size: 0.9em;
+  filter: drop-shadow(2px 0px 3px rgba(249, 203, 201, 0.817));
+}
+
+.container {
+  width: 64rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  margin: 1rem;
+  overflow: hidden;
+}
+.container .card {
+  width: 40em;
+  height: 20em;
+  margin: 3em auto;
+}
+.container .card img {
+  width: 20rem;
+  height: 26rem;
+  float: left;
+  border-radius: 0.3em 0 0 0.3em;
+}
+.container .card-content {
+  float: right;
+  height: 26rem;
+  width: 20rem;
+  border-radius: 0 0.3rem 0.5rem 0.3rem;
+  background-color: rgb(34, 35, 43);
+}
+.container .card-content h1 {
+  margin: 0 0 0 2.3rem;
+  font-size: 3.25rem;
+}
+.container .card-content h4 {
+  margin: 0 0 2em 1.2em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #868686;
+  letter-spacing: 0.01em;
+}
+.container .card-content p {
+  height: 8rem;
+  margin: 0.5em 0.5em 0 1.2em;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  font-weight: lighter;
+  overflow: hidden;
+}
+.container .card-btn {
+  height: 7rem;
+  width: 20rem;
+  margin-top: 1.1em;
+  position: relative;
+}
+.container .card-btn p {
+  display: inline-block;
+  position: absolute;
+  top: 1em;
+  height: 3.2em;
+  margin: 0 0 0 1em;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.container .card-btn p span {
+  display: inline-block;
+  height: 3.2em;
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin-left: 0.1em;
+  font-style: italic;
+}
+.container .card-btn button {
+  display: inline-block;
+  height: 3em;
+  width: 8em;
+  margin: 3em 2em 0 1.3em;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 2em;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background-color: #c6c6c6;
+  cursor: pointer;
+  outline: none;
+  transition: 250ms ease-in-out;
+}
+.container .card-btn button:hover {
+  background-color: rgba(251, 216, 213, 0.803);
+  transform: scale(1.05);
+}
+
+footer {
+  margin: 0;
+  clear: both;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+footer img {
+  width: 10em;
+  height: auto;
+}

@@ -119,6 +119,7 @@ main {
 			justify-content: center;
 			align-items: center;
 			transition: 250ms ease-in-out;
+			cursor: pointer;
 
 			article img {
 				height: 100%;
@@ -172,6 +173,9 @@ main {
 
 		article:hover {
 			transform: scale(1.1);
+			filter: drop-shadow(0.1em 0 0.4em rgba(249, 202, 201, 0.418));
+			z-index: -1;
+
 		}
 	}
 }
