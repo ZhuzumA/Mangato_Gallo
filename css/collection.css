@@ -126,6 +126,7 @@ body nav > ul > li a:hover {
   font-style: italic;
 }
 .container .card-btn button {
+  float: right;
   display: inline-block;
   height: 3em;
   width: 8em;
