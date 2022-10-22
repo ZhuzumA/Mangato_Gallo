@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Source Code: [GitHub Repo](https://github.com/ZhuzumA/Mangato_Gallo)
-- Live Site URL: [Mangato & Gallo](https://your-live-site-url.com)
+- Live Site URL: [Mangato & Gallo](https://zhuzuma.github.io/Mangato_Gallo/)
 
 ### Built with
 
