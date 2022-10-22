@@ -17,13 +17,14 @@ body {
 body {
   font-family: "Cormorant Garamond", serif;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../resources/about.jpg") no-repeat center center fixed;
-  padding: 1rem 5%;
+  padding: 1rem 3em;
   color: rgb(242, 246, 250);
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 64rem;
+  height: auto;
 }
 body header > img {
   width: 10rem;
@@ -76,4 +77,37 @@ section h3 {
 }
 section p {
   margin: 2em 0;
+}
+
+@media screen and (max-width: 960px) {
+  header > img {
+    width: 8rem;
+    height: auto;
+  }
+  ul {
+    margin: 1em 0.1em;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 25em !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  header > img {
+    width: 6rem !important;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+  ul {
+    width: 18em !important;
+  }
+  body {
+    font-size: 1em;
+    width: 40rem;
+  }
+  section {
+    width: 30em;
+    margin-top: 1rem;
+  }
 }

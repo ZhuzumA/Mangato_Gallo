@@ -14,7 +14,6 @@
 body {
 	transform: scale(1);
 	transform-origin: 0 0;
-	// add prefixed versions too.
 }
 
 body {
@@ -26,7 +25,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
+	width: 64rem;
+	height: auto;
 	max-width: 100vw;
 	margin: 0 auto;
 
@@ -39,6 +39,7 @@ body {
 		height: auto;
 	}
 
+	//Navigation list
 	nav>ul {
 		margin: 1em 1.5em;
 		list-style: none;
@@ -47,7 +48,7 @@ body {
 		justify-content: space-around;
 		border: $beige-font 0.01em solid;
 		border-radius: 0.3em;
-		width: 50em;
+		width: 40em;
 	}
 
 	nav>ul>li {
@@ -68,6 +69,7 @@ body {
 	}
 }
 
+//Designing Main Image 
 main {
 	display: flex;
 	flex-direction: column;
@@ -76,9 +78,10 @@ main {
 		margin: 0.5em auto;
 		align-items: center;
 		position: relative;
+		overflow: hidden;
 
 		img {
-			width: 60em;
+			width: 45em;
 			height: auto;
 			border-radius: 1rem;
 		}
@@ -102,13 +105,14 @@ main {
 	}
 }
 
+//Styling main Section with 3 Cards 
 .main-container {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
-	margin: 1.5em auto;
-	gap: 3.5em;
+	margin: 1em auto;
+	gap: 1.5em;
 
 	section {
 
@@ -126,8 +130,8 @@ main {
 			}
 
 			img {
-				width: 18em;
-				height: 25em;
+				width: 14em;
+				height: 20em;
 				border-radius: 1em;
 				position: relative;
 			}
@@ -167,6 +171,7 @@ main {
 			}
 		}
 
+		//Adding effect on Card Hover
 		article:hover .card-container {
 			transform: translateY(0);
 		}
@@ -180,6 +185,7 @@ main {
 	}
 }
 
+//Footer
 footer {
 	margin: 0;
 	clear: both;
@@ -196,4 +202,99 @@ footer {
 footer img {
 	width: 10em;
 	height: auto;
+}
+
+//Responsive Design for Small PC screen and Tablet
+@media screen and (max-width: $lg-viewport) {
+	header>img {
+		width: 8rem !important;
+		height: auto;
+	}
+
+	ul {
+		margin: 1em 0.1em;
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		width: 25em !important;
+	}
+
+	.img-container img {
+		width: 30em !important;
+		height: auto;
+	}
+
+	.img-container {
+
+		h1 {
+			position: absolute;
+			z-index: 99;
+			left: 3%;
+			top: 55% !important;
+			font-size: 0.8em;
+
+			span {
+				font-size: 1.4em;
+			}
+		}
+	}
+
+	.main-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+//Responsive design for smaller Table and Mobile
+@media screen and (max-width: $md-viewport) {
+	header>img {
+		width: 6rem !important;
+		height: auto;
+	}
+
+	ul {
+		margin: 1em 0.1em;
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		width: 18em !important;
+	}
+
+	.img-container img {
+		width: 20em !important;
+		height: auto;
+	}
+
+	.img-container {
+
+		h1 {
+			position: absolute;
+			z-index: 99;
+			left: 3%;
+			top: 48% !important;
+			font-size: 0.3em;
+
+			span {
+				font-size: 1em;
+			}
+		}
+	}
+
+	.card-container {
+		width: 10em;
+		font-size: 0.9em;
+	}
+
+	footer {
+		font-size: 0.6em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	footer img {
+		width: 10em;
+		height: auto;
+	}
 }

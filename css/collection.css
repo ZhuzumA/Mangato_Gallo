@@ -23,8 +23,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 100vw;
+  width: 64rem;
+  height: auto;
   margin: 0 auto;
 }
 body header > img {
@@ -35,7 +35,7 @@ body nav > ul {
   margin: 1em 1.5em;
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   border: rgba(251, 216, 213, 0.803) 0.01em solid;
   border-radius: 0.3em;
@@ -59,24 +59,24 @@ body nav > ul > li a:hover {
 .container {
   width: 64rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   gap: 1.5rem;
   margin: 1rem;
   overflow: hidden;
 }
 .container .card {
   width: 40em;
-  height: 20em;
   margin: 3em auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 .container .card img {
   width: 20rem;
   height: 26rem;
-  float: left;
   border-radius: 0.3em 0 0 0.3em;
 }
 .container .card-content {
-  float: right;
   height: 26rem;
   width: 20rem;
   border-radius: 0 0.3rem 0.5rem 0.3rem;
@@ -164,4 +164,62 @@ footer {
 footer img {
   width: 10em;
   height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 0.7em;
+    width: 50rem;
+  }
+  header > img {
+    width: 2rem;
+    height: auto;
+  }
+  ul {
+    margin: 1em 0.1em;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 25em !important;
+  }
+  .card {
+    display: flex;
+    flex-flow: column wrap !important;
+    margin: 0 2em;
+  }
+  img {
+    border-radius: 0.3em 0.3em 0.3em 0em;
+  }
+  .card-content {
+    border-radius: 0 0em 0.3em 0.3em;
+  }
+}
+@media screen and (max-width: 760px) {
+  header > img {
+    width: 6rem !important;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+  ul {
+    width: 18em !important;
+  }
+  body {
+    font-size: 0.7em;
+    width: 40rem;
+  }
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+  }
+  footer {
+    font-size: 0.6em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  footer img {
+    width: 10em;
+    height: auto;
+  }
 }

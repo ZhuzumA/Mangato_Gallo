@@ -20,19 +20,22 @@ body {
 body {
 	font-family: $font-family-serif;
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../resources/about.jpg") no-repeat center center fixed;
-	padding: 1rem 5%;
+	padding: 1rem 3em;
 	color: $light-font;
 	font-size: 1.2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
+	width: 64rem;
+	height: auto;
 
+	//Logo
 	header>img {
 		width: 10rem;
 		height: auto;
 	}
 
+	//Navigation bar
 	nav>ul {
 		margin: 1em 1.5em;
 		list-style: none;
@@ -87,5 +90,45 @@ section {
 
 	p {
 		margin: 2em 0;
+	}
+}
+
+//Responsive Design for small PC and Tablet
+@media screen and (max-width: $lg-viewport) {
+	header>img {
+		width: 8rem;
+		height: auto;
+	}
+
+	ul {
+		margin: 1em 0.1em;
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		width: 25em !important;
+	}
+}
+
+//Responsive design for smaller Tablet and Mobile
+@media screen and (max-width: $md-viewport) {
+	header>img {
+		width: 6rem !important;
+		height: auto;
+		margin-bottom: 1.5em;
+	}
+
+	ul {
+		width: 18em !important;
+	}
+
+	body {
+		font-size: 1em;
+		width: 40rem
+	}
+
+	section {
+		width: 30em;
+		margin-top: 1rem;
 	}
 }
