@@ -22,12 +22,12 @@ Users should be able to:
 - Be able to reach all Pages: About, Collection, Home
 ### Screenshot
 
-![](./screenshots/main.png)
-![](./screenshots/collection.png)
-![](./screenshots/collection_on_hover.png)
-![](./screenshots/main_on_hover.png)
-![](./screenshots/collection_resp.png)
-![](./screenshots/about.png)
+![](./main.png)
+![](./collection.png)
+![](./collection_on_hover.png)
+![](./main_on_hover.png)
+![](./collection_resp.png)
+![](./about.png)
 
 
 ### Links
