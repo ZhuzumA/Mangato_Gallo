@@ -17,7 +17,7 @@ body {
 body {
   font-family: "Cormorant Garamond", serif;
   background-color: rgb(26, 27, 35);
-  padding: 1rem 5%;
+  padding: 1rem 0rem;
   color: rgb(242, 246, 250);
   font-size: 1em;
   display: flex;
@@ -25,21 +25,20 @@ body {
   align-items: center;
   width: 64rem;
   height: auto;
-  margin: 0 auto;
 }
 body header > img {
   width: 10rem;
   height: auto;
 }
 body nav > ul {
-  margin: 1em 1.5em;
+  margin-bottom: 1rem;
   list-style: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border: rgba(251, 216, 213, 0.803) 0.01em solid;
-  border-radius: 0.3em;
-  width: 50em;
+  border: rgba(251, 216, 213, 0.803) 0.01rem solid;
+  border-radius: 0.2rem;
+  width: 50rem;
 }
 body nav > ul > li {
   padding: 0.2em;
@@ -47,26 +46,27 @@ body nav > ul > li {
 body nav > ul > li a {
   text-decoration: none;
   color: rgb(242, 246, 250);
-  font-size: 0.8em;
+  font-size: 0.8rem;
   transition: 0.5s;
+  font-weight: lighter;
 }
 body nav > ul > li a:hover {
   color: rgba(249, 203, 201, 0.817);
-  font-size: 0.9em;
+  font-size: 1rem;
   filter: drop-shadow(2px 0px 3px rgba(249, 203, 201, 0.817));
 }
 
 .container {
-  width: 64rem;
+  width: 45rem;
   display: flex;
   flex-flow: column nowrap;
-  gap: 1.5rem;
-  margin: 1rem;
+  gap: 1rem;
+  margin: 0.5rem 0;
   overflow: hidden;
 }
 .container .card {
-  width: 40em;
-  margin: 3em auto;
+  width: 40rem;
+  margin: 0.5rem auto;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -167,26 +167,22 @@ footer img {
 }
 
 @media screen and (max-width: 960px) {
-  body {
-    font-size: 0.7em;
-    width: 50rem;
-  }
   header > img {
     width: 2rem;
     height: auto;
   }
   ul {
     margin: 1em 0.1em;
+    font-size: 1rem;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 25em !important;
+    width: 35rem !important;
   }
   .card {
     display: flex;
     flex-flow: column wrap !important;
-    margin: 0 2em;
   }
   img {
     border-radius: 0.3em 0.3em 0.3em 0em;
@@ -196,30 +192,32 @@ footer img {
   }
 }
 @media screen and (max-width: 760px) {
+  body {
+    width: 27rem;
+  }
   header > img {
     width: 6rem !important;
     height: auto;
     margin-bottom: 1.5em;
+    text-align: center;
   }
   ul {
-    width: 18em !important;
-  }
-  body {
-    font-size: 0.7em;
-    width: 40rem;
+    width: 20rem !important;
+    font-size: 0.9rem;
   }
   .container {
     display: flex;
     flex-flow: column nowrap;
-    gap: 0.5em;
+    gap: 0.2em;
+    align-items: center;
   }
   footer {
-    font-size: 0.6em;
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   footer img {
-    width: 10em;
+    width: 10rem;
     height: auto;
   }
 }

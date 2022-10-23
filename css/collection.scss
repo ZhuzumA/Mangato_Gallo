@@ -21,7 +21,7 @@ body {
 body {
 	font-family: $font-family-serif;
 	background-color: $background-color;
-	padding: 1rem 5%;
+	padding: 1rem 0rem;
 	color: $light-font;
 	font-size: 1em;
 	display: flex;
@@ -29,7 +29,6 @@ body {
 	align-items: center;
 	width: 64rem;
 	height: auto;
-	margin: 0 auto;
 
 	//Logo
 	header>img {
@@ -39,14 +38,14 @@ body {
 
 	//Navigation bar
 	nav>ul {
-		margin: 1em 1.5em;
+		margin-bottom: 1rem;
 		list-style: none;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		border: $beige-font 0.01em solid;
-		border-radius: 0.3em;
-		width: 50em;
+		border: $beige-font 0.01rem solid;
+		border-radius: 0.2rem;
+		width: 50rem;
 	}
 
 	nav>ul>li {
@@ -55,13 +54,14 @@ body {
 		a {
 			text-decoration: none;
 			color: $light-font;
-			font-size: 0.8em;
+			font-size: 0.8rem;
 			transition: 0.5s;
+			font-weight: lighter;
 		}
 
 		a:hover {
 			color: $beige-hover;
-			font-size: 0.9em;
+			font-size: 1rem;
 			filter: drop-shadow(2px 0px 3px $beige-hover);
 		}
 	}
@@ -69,16 +69,16 @@ body {
 
 //main section, cards
 .container {
-	width: 64rem;
+	width: 45rem;
 	display: flex;
 	flex-flow: column nowrap;
-	gap: 1.5rem;
-	margin: 1rem;
+	gap: 1rem;
+	margin: 0.5rem 0;
 	overflow: hidden;
 
 	.card {
-		width: 40em;
-		margin: 3em auto;
+		width: 40rem;
+		margin: 0.5rem auto;
 		display: flex;
 		flex-direction: row;
 		align-content: center;
@@ -194,11 +194,6 @@ footer img {
 
 //Responsive Design for Small PC and Tablet
 @media screen and (max-width: $lg-viewport) {
-	body {
-		font-size: 0.7em;
-		width: 50rem
-	}
-
 	header>img {
 		width: 2rem;
 		height: auto;
@@ -206,17 +201,17 @@ footer img {
 
 	ul {
 		margin: 1em 0.1em;
+		font-size: 1rem;
 		list-style: none;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		width: 25em !important;
+		width: 35rem !important;
 	}
 
 	.card {
 		display: flex;
 		flex-flow: column wrap !important;
-		margin: 0 2em;
 	}
 
 	img {
@@ -230,35 +225,37 @@ footer img {
 
 //Responsive design for smaller Tablet and Mobile
 @media screen and (max-width: $md-viewport) {
+	body {
+		width: 27rem;
+	}
+
 	header>img {
 		width: 6rem !important;
 		height: auto;
 		margin-bottom: 1.5em;
+		text-align: center;
 	}
 
 	ul {
-		width: 18em !important;
-	}
-
-	body {
-		font-size: 0.7em;
-		width: 40rem
+		width: 20rem !important;
+		font-size: 0.9rem;
 	}
 
 	.container {
 		display: flex;
 		flex-flow: column nowrap;
-		gap: 0.5em;
+		gap: 0.2em;
+		align-items: center;
 	}
 
 	footer {
-		font-size: 0.6em;
-		padding-left: 1em;
-		padding-right: 1em;
+		font-size: 0.8rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	footer img {
-		width: 10em;
+		width: 10rem;
 		height: auto;
 	}
 }
